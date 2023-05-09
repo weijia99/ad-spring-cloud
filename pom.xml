@@ -12,6 +12,7 @@
         <module>ad-eureka</module>
         <module>ad-gateway</module>
         <module>imooc-ad-service</module>
+        <module>ad-sponsor</module>
     </modules>
     <!--    设置为主文件pom，打包jar-->
     <version>1.0-SNAPSHOT</version>
@@ -28,6 +29,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <mysql-connector.version>8.0.15</mysql-connector.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 <!--        自定义版本-->
