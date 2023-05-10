@@ -10,13 +10,14 @@ eureka:
 #900端口大块网关，eureka地址配置，发现注册微服务的
 
 #前缀匹配，对于不同的前缀调用不同的路由
-#zuul:
-#  prefix: /imooc
-#  routes:
-#    sponsor:
-#      path: /ad-sponsor/**
-#      serviceId: eureka-client-ad-sponsor
-#      strip-prefix: false
+#zuul设置每一个微服务的名称，然后设置前缀，id是从eureka复制的
+zuul:
+  prefix: /imooc
+  routes:
+    sponsor:
+      path: /ad-sponsor/**
+      serviceId: eureka-client-ad-sponsor
+      strip-prefix: false
 #    search:
 #      path: /ad-search/**
 #      serviceId: eureka-client-ad-search
